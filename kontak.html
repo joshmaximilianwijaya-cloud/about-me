@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kontak — Nama Lengkap</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="navbar">
+  <div class="nav-inner">
+    <a href="index.html" class="brand"><span class="dot"></span>Nama Lengkap</a>
+    <button class="nav-toggle" aria-label="Buka menu">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="tentang.html">Tentang Saya</a></li>
+      <li><a href="pendidikan.html">Pendidikan</a></li>
+      <li><a href="keahlian.html">Keahlian</a></li>
+      <li><a href="pengalaman.html">Pengalaman</a></li>
+      <li><a href="kontak.html">Kontak</a></li>
+    </ul>
+  </div>
+</nav>
+
+<main>
+  <div class="container">
+    <h1 class="page-title">Kontak</h1>
+    <p class="section-sub">Ingin menghubungi saya? Silakan lewat salah satu cara berikut.</p>
+
+    <div class="contact-grid">
+      <div class="card">
+        <h3>Email &amp; Sosial Media</h3>
+
+        <div class="copy-email-row">
+          <span>nama@email.com</span>
+          <button class="btn" id="copyEmailBtn" data-email="nama@email.com" type="button">Salin Email</button>
+        </div>
+        <div id="copyFeedback">Email disalin ke clipboard!</div>
+
+        <ul class="social-list" style="margin-top:18px;">
+          <li><a href="#" target="_blank">📷 Instagram — @username</a></li>
+          <li><a href="#" target="_blank">💼 LinkedIn — linkedin.com/in/username</a></li>
+          <li><a href="#" target="_blank">🐙 GitHub — github.com/username</a></li>
+          <li><a href="#" target="_blank">🎵 TikTok — @username</a></li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3>Kirim Pesan</h3>
+        <form id="contactForm" novalidate>
+          <div>
+            <label for="formName">Nama</label>
+            <input type="text" id="formName" placeholder="Nama Anda">
+          </div>
+          <div>
+            <label for="formEmail">Email</label>
+            <input type="email" id="formEmail" placeholder="email@anda.com">
+          </div>
+          <div>
+            <label for="formMessage">Pesan</label>
+            <textarea id="formMessage" placeholder="Tulis pesan Anda di sini..."></textarea>
+          </div>
+          <div class="form-msg" id="formMsg"></div>
+          <button type="submit" class="btn btn-primary" style="align-self:flex-start;">Kirim Pesan</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer>
+  © 2026 Nama Lengkap — Dibuat dengan HTML, CSS &amp; JavaScript
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
